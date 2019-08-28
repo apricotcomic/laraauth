@@ -40,6 +40,15 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="update" class="col-md-4 col-form-label text-md-right">{{ __('Update') }}</label>
+                            <div class="col-md-6">
+                                <div>
+                                    <input type="checkbox" name="update" value="0" {{ is_array(old("update")) && in_array("1", old("update"), true)? 'checked="checked"' : '' }}>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
