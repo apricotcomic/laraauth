@@ -43,7 +43,8 @@
                             <label for="update" class="col-md-4 col-form-label text-md-right">{{ __('Update') }}</label>
                             <div class="col-md-6">
                                 <div>
-                                    <input type="checkbox" name="update" value="0" {{ is_array(old("update")) && in_array("1", old("update"), true)? 'checked="checked"' : '' }}>
+                                    {{ Form::hidden('update', '0') }}
+                                    {{ Form::checkbox('update', '1') }}
                                 </div>
                             </div>
                         </div>
