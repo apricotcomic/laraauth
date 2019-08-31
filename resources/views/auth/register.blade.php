@@ -40,11 +40,11 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="update" class="col-md-4 col-form-label text-md-right">{{ __('Update') }}</label>
+                            <label for="admin_chk" class="col-md-4 col-form-label text-md-right">{{ __('Admin') }}</label>
                             <div class="col-md-6">
                                 <div>
-                                    {{ Form::hidden('update', '0') }}
-                                    {{ Form::checkbox('update', '1') }}
+                                    {{ Form::hidden('admin_chk', '0') }}
+                                    {{ Form::checkbox('admin_chk', '1') }}
                                 </div>
                             </div>
                         </div>
