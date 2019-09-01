@@ -4,6 +4,7 @@
 </head>
 <body>
 <h1>照会画面</h1>
+こんにちは！{{ Auth::user()->name }}<br /><br />
 何か表示するよ！そのうちね
 <br />
 {!! Form::open() !!}

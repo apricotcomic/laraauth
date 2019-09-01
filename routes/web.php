@@ -32,3 +32,5 @@ Route::get('/test/update', function() {
 Route::post('/test/search', 'Test\MenuController@search')->name('search');
 
 Route::post('/test/update', 'Test\MenuController@update')->name('update');
+
+Route::post('/test/complete', 'Test\MenuController@complete')->name('complete');
