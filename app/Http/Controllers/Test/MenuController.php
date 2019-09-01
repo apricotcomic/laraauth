@@ -33,7 +33,7 @@ class MenuController extends Controller
     public function update(Request $request )
     {
         $action = $request->get('action', 'back');
-        $input = $request->expect('action');
+        $input = $request->except('action');
 
         if($request->action === 'back') {
             return view('test/menu');
