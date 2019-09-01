@@ -3,9 +3,11 @@
     <meta charset="utf-8">
 </head>
 <body>
+    こんにちは！{{ Auth::user()->name }}<br /><br />
     <a href="/test/search">照会処理</a><br />
-
+    @can('admin')
         <a href="/test/update">更新処理</a><br /><br />
+    @endcan
     <a href={{ route('logout') }} onclick="event.preventDefault();
     document.getElementById('logout-form').submit();">
     Logout

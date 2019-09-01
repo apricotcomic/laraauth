@@ -16,6 +16,7 @@ class AddColumnUsersTable extends Migration
         Schema::table('users', function (Blueprint $table) {
             //
             $table->boolean('admin_chk')->default(0)->after('password');
+            $table->string('memberno')->after('id')->unique();
         });
     }
 
@@ -29,6 +30,7 @@ class AddColumnUsersTable extends Migration
         Schema::table('users', function (Blueprint $table) {
             //
             $table->dropColumn('admin_chk');
+            $table->dropColumn('memberno');
         });
     }
 }
